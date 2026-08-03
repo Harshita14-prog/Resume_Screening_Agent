@@ -1,0 +1,15 @@
+Aman Singh
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, Machine Learning, SQL, Pandas, Scikit-learn, Git
+
+Experience:
+Worked on machine learning projects involving data preprocessing
+and predictive modeling.
+
+Projects:
+Customer Churn Prediction
+House Price Prediction

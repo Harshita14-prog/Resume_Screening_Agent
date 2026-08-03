@@ -1,0 +1,164 @@
+[
+    {
+        "rank": 1,
+        "candidate": "candidate_12.pdf",
+        "nlp_similarity": 41.78,
+        "skill_match": 87.5,
+        "final_score": 55.49,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "nlp",
+            "sql",
+            "rest api",
+            "fastapi",
+            "git"
+        ],
+        "reason": "Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, fastapi, git. Skill match score: 87.50%."
+    },
+    {
+        "rank": 2,
+        "candidate": "candidate_01.txt",
+        "nlp_similarity": 37.31,
+        "skill_match": 87.5,
+        "final_score": 52.37,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "nlp",
+            "sql",
+            "rest api",
+            "flask",
+            "git"
+        ],
+        "reason": "Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, flask, git. Skill match score: 87.50%."
+    },
+    {
+        "rank": 3,
+        "candidate": "candidate_08.txt",
+        "nlp_similarity": 35.19,
+        "skill_match": 62.5,
+        "final_score": 43.38,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "nlp",
+            "sql",
+            "flask"
+        ],
+        "reason": "Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, flask. Skill match score: 62.50%."
+    },
+    {
+        "rank": 4,
+        "candidate": "candidate_04.txt",
+        "nlp_similarity": 30.62,
+        "skill_match": 62.5,
+        "final_score": 40.18,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "nlp",
+            "sql",
+            "git"
+        ],
+        "reason": "Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, git. Skill match score: 62.50%."
+    },
+    {
+        "rank": 5,
+        "candidate": "candidate_03.txt",
+        "nlp_similarity": 26.97,
+        "skill_match": 50.0,
+        "final_score": 33.88,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "sql",
+            "git"
+        ],
+        "reason": "Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
+    },
+    {
+        "rank": 6,
+        "candidate": "candidate_10.txt",
+        "nlp_similarity": 24.94,
+        "skill_match": 50.0,
+        "final_score": 32.46,
+        "matched_skills": [
+            "python",
+            "machine learning",
+            "sql",
+            "git"
+        ],
+        "reason": "Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
+    },
+    {
+        "rank": 7,
+        "candidate": "candidate_05.txt",
+        "nlp_similarity": 15.04,
+        "skill_match": 37.5,
+        "final_score": 21.78,
+        "matched_skills": [
+            "sql",
+            "rest api",
+            "git"
+        ],
+        "reason": "Weak match for the Junior AI Developer role. Matched 3 target skill(s): sql, rest api, git. Skill match score: 37.50%."
+    },
+    {
+        "rank": 8,
+        "candidate": "candidate_06.txt",
+        "nlp_similarity": 12.93,
+        "skill_match": 25.0,
+        "final_score": 16.55,
+        "matched_skills": [
+            "python",
+            "sql"
+        ],
+        "reason": "Weak match for the Junior AI Developer role. Matched 2 target skill(s): python, sql. Skill match score: 25.00%."
+    },
+    {
+        "rank": 9,
+        "candidate": "candidate_02.txt",
+        "nlp_similarity": 9.64,
+        "skill_match": 25.0,
+        "final_score": 14.25,
+        "matched_skills": [
+            "sql",
+            "rest api"
+        ],
+        "reason": "Poor match for the Junior AI Developer role. Matched 2 target skill(s): sql, rest api. Skill match score: 25.00%."
+    },
+    {
+        "rank": 10,
+        "candidate": "candidate_09.txt",
+        "nlp_similarity": 10.62,
+        "skill_match": 12.5,
+        "final_score": 11.18,
+        "matched_skills": [
+            "rest api"
+        ],
+        "reason": "Poor match for the Junior AI Developer role. Matched 1 target skill(s): rest api. Skill match score: 12.50%."
+    },
+    {
+        "rank": 11,
+        "candidate": "candidate_07.txt",
+        "nlp_similarity": 8.68,
+        "skill_match": 12.5,
+        "final_score": 9.83,
+        "matched_skills": [
+            "python"
+        ],
+        "reason": "Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%."
+    },
+    {
+        "rank": 12,
+        "candidate": "candidate_11.docx",
+        "nlp_similarity": 7.11,
+        "skill_match": 12.5,
+        "final_score": 8.73,
+        "matched_skills": [
+            "python"
+        ],
+        "reason": "Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%."
+    }
+]

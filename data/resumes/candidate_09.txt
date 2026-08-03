@@ -1,0 +1,15 @@
+Vivek Agarwal
+
+Education:
+B.Tech Computer Science
+
+Skills:
+JavaScript, React, HTML, CSS, Node.js, MongoDB
+
+Experience:
+Developed responsive web applications using React and Node.js.
+Worked with MongoDB and REST APIs.
+
+Projects:
+E-Commerce Website
+Task Management Application

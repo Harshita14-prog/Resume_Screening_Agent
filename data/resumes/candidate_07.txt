@@ -1,0 +1,14 @@
+Arjun Malhotra
+
+Education:
+B.Tech Electronics and Communication
+
+Skills:
+C++, Embedded Systems, Arduino, MATLAB, Python
+
+Experience:
+Worked on embedded systems and hardware automation projects.
+
+Projects:
+Smart Home Automation
+IoT Temperature Monitoring

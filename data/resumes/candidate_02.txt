@@ -1,0 +1,15 @@
+Priya Singh
+
+Education:
+B.Tech Information Technology
+
+Skills:
+Java, Spring Boot, MySQL, HTML, CSS, JavaScript
+
+Experience:
+Developed web applications using Java and Spring Boot.
+Worked with relational databases and REST APIs.
+
+Projects:
+Library Management System
+E-Commerce Web Application

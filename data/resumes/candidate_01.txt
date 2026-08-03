@@ -1,0 +1,15 @@
+Rahul Sharma
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, Machine Learning, NLP, SQL, Flask, Git
+
+Experience:
+Built an AI-based resume screening project using Python and NLP.
+Developed REST APIs using Flask.
+
+Projects:
+AI Resume Screening System
+Lecture Transcription and Notes Generator

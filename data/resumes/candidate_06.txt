@@ -1,0 +1,15 @@
+Sneha Gupta
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, Data Science, Pandas, NumPy, SQL, Matplotlib
+
+Experience:
+Performed data analysis and visualization on large datasets.
+Built predictive models using Python and scikit-learn.
+
+Projects:
+Sales Prediction
+Customer Data Analysis

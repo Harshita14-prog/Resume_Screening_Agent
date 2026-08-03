@@ -1,0 +1,15 @@
+Ananya Verma
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, SQL, Machine Learning, Scikit-learn, Pandas, GitHub
+
+Experience:
+Worked on machine learning and data preprocessing tasks.
+Built predictive models using Python and scikit-learn.
+
+Projects:
+Loan Default Prediction
+Customer Churn Prediction

@@ -1,0 +1,13 @@
+Rank,Candidate,NLP Similarity,Skill Match,Final Score,Matched Skills,Reason
+1,candidate_12.pdf,41.78,87.5,55.49,"python, machine learning, nlp, sql, rest api, fastapi, git","Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, fastapi, git. Skill match score: 87.50%."
+2,candidate_01.txt,37.31,87.5,52.37,"python, machine learning, nlp, sql, rest api, flask, git","Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, flask, git. Skill match score: 87.50%."
+3,candidate_08.txt,35.19,62.5,43.38,"python, machine learning, nlp, sql, flask","Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, flask. Skill match score: 62.50%."
+4,candidate_04.txt,30.62,62.5,40.18,"python, machine learning, nlp, sql, git","Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, git. Skill match score: 62.50%."
+5,candidate_03.txt,26.97,50.0,33.88,"python, machine learning, sql, git","Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
+6,candidate_10.txt,24.94,50.0,32.46,"python, machine learning, sql, git","Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
+7,candidate_05.txt,15.04,37.5,21.78,"sql, rest api, git","Weak match for the Junior AI Developer role. Matched 3 target skill(s): sql, rest api, git. Skill match score: 37.50%."
+8,candidate_06.txt,12.93,25.0,16.55,"python, sql","Weak match for the Junior AI Developer role. Matched 2 target skill(s): python, sql. Skill match score: 25.00%."
+9,candidate_02.txt,9.64,25.0,14.25,"sql, rest api","Poor match for the Junior AI Developer role. Matched 2 target skill(s): sql, rest api. Skill match score: 25.00%."
+10,candidate_09.txt,10.62,12.5,11.18,rest api,Poor match for the Junior AI Developer role. Matched 1 target skill(s): rest api. Skill match score: 12.50%.
+11,candidate_07.txt,8.68,12.5,9.83,python,Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%.
+12,candidate_11.docx,7.11,12.5,8.73,python,Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%.

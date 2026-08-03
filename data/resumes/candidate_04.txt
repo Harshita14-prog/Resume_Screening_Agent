@@ -1,0 +1,15 @@
+Neha Kapoor
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, NLP, Machine Learning, SQL, TensorFlow, Git
+
+Experience:
+Developed NLP-based text classification models.
+Worked on data preprocessing and machine learning pipelines.
+
+Projects:
+Sentiment Analysis System
+NLP Text Classification

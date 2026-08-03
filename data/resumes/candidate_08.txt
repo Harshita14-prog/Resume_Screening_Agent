@@ -1,0 +1,16 @@
+Kavya Sharma
+
+Education:
+B.Tech Computer Science
+
+Skills:
+Python, Machine Learning, Deep Learning, NLP, SQL, Flask
+
+Experience:
+Built machine learning models for classification and prediction.
+Developed Flask APIs for deploying ML models.
+
+Projects:
+AI Chatbot
+Disease Prediction System
+Resume Classification Model

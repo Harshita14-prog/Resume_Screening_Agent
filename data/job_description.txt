@@ -1,0 +1,17 @@
+Junior AI Developer
+
+We are looking for a Junior AI Developer with knowledge of Python,
+machine learning, NLP, SQL and REST APIs.
+
+Requirements:
+- Strong Python programming skills
+- Knowledge of machine learning and NLP
+- Experience with SQL and databases
+- Understanding of REST APIs
+- Good problem-solving skills
+- Bachelor's degree in Computer Science or related field
+
+Preferred:
+- Experience with Flask or FastAPI
+- Knowledge of Git and GitHub
+- Experience building AI or machine learning projects

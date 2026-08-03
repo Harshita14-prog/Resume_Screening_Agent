@@ -1,0 +1,15 @@
+Rohan Mehta
+
+Education:
+B.Tech Information Technology
+
+Skills:
+Java, Spring Boot, MySQL, REST APIs, Git, Docker
+
+Experience:
+Developed backend applications using Java and Spring Boot.
+Designed REST APIs and worked with MySQL databases.
+
+Projects:
+Banking Management System
+REST API Service
