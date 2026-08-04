@@ -33,20 +33,15 @@ The agent can process multiple resumes in a single run and supports TXT, PDF, an
 * Identifies matched and missing skills
 
 * Assigns deterministic recommendations:
-
-* `SHORTLIST`
-
-* `CONSIDER`
-
-* `REJECT`
+  * `SHORTLIST`
+  * `CONSIDER`
+  * `REJECT`
 
 * Automatically ranks candidates by final score
 
 * Exports ranked results to CSV and JSON
 
 ---
-
-## Architecture
 
 ## Architecture
 
