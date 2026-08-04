@@ -4,6 +4,8 @@ An AI-powered Resume Screening Agent that evaluates and ranks multiple candidate
 
 The agent combines deterministic NLP-based scoring with an LLM-powered analysis layer to produce a ranked shortlist, candidate reasoning, skill gaps, education, and experience.
 
+---
+
 ## What the Agent Does
 
 > **My agent takes a Job Description and a folder of resumes, and produces a scored, ranked shortlist with AI-generated candidate analysis.**
@@ -20,7 +22,7 @@ The agent can process multiple resumes in a single run and supports TXT, PDF, an
 * Matches resumes against required skills
 * Calculates a weighted final score
 * Extracts skills, education, and experience using an LLM
-* Generates evidence-based AI reasoning for each candidate
+* Generates AI-powered candidate reasoning
 * Identifies matched and missing skills
 * Assigns deterministic recommendations:
 
@@ -36,47 +38,48 @@ The agent can process multiple resumes in a single run and supports TXT, PDF, an
 
 ```text
                  Job Description
-                       |
-                       v
-              Required Skill Set
-                       |
-                       |
-        +--------------+--------------+
-        |                             |
-        v                             v
-   Resume Folder                Resume Parser
-   10+ Resumes                TXT / PDF / DOCX
-        |                             |
-        +--------------+--------------+
-                       |
-                       v
-                  Resume Text
-                       |
-          +------------+------------+
-          |                         |
-          v                         v
-    TF-IDF + Cosine           Skill Matching
-      Similarity
-          |                         |
-          +------------+------------+
-                       |
-                       v
-                Final Score
-              70% NLP + 30% Skills
-                       |
-                       v
-              Candidate Ranking
-                       |
-          +------------+-------------+
-          |                          |
-          v                          v
-   LLM Information              LLM Reasoning
-     Extraction
-          |                          |
-          +------------+-------------+
-                       |
-                       v
-               CSV + JSON Output
+                        |
+                        v
+                Required Skill Set
+                        |
+                        |
+          +-------------+-------------+
+          |                           |
+          v                           v
+    Resume Folder               Resume Parser
+    10+ Resumes               TXT / PDF / DOCX
+          |                           |
+          +-------------+-------------+
+                        |
+                        v
+                   Resume Text
+                        |
+              +---------+---------+
+              |                   |
+              v                   v
+       TF-IDF + Cosine      Skill Matching
+         Similarity
+              |                   |
+              +---------+---------+
+                        |
+                        v
+                   Final Score
+                  70% NLP + 30%
+                     Skills
+                        |
+                        v
+                 Candidate Ranking
+                        |
+             +----------+----------+
+             |                     |
+             v                     v
+      LLM Information       LLM Reasoning
+         Extraction
+             |                     |
+             +----------+----------+
+                        |
+                        v
+                   CSV + JSON
 ```
 
 ---
@@ -112,9 +115,11 @@ Final Score =
 (Skill Match × 0.30)
 ```
 
-The candidates are ranked in descending order of this final score.
+Candidates are ranked in descending order of the final score.
 
-For the current implementation, the target skills are:
+### Current Target Skills
+
+The current implementation checks for:
 
 * Python
 * Machine Learning
@@ -156,7 +161,7 @@ The agent uses the Groq API with the `llama-3.1-8b-instant` model.
 
 The LLM is used for two tasks:
 
-### Structured Resume Extraction
+### 1. Structured Resume Extraction
 
 The model extracts:
 
@@ -170,7 +175,7 @@ from the parsed resume text.
 
 The extraction prompt instructs the model to use only information explicitly present in the resume and return structured JSON.
 
-### Candidate Reasoning
+### 2. Candidate Reasoning
 
 The LLM receives:
 
@@ -204,7 +209,8 @@ Resume_Screening_Agent/
 │       ├── candidate_01.txt
 │       ├── candidate_02.txt
 │       ├── ...
-│       └── candidate_12.txt
+│       ├── candidate_11.docx
+│       └── candidate_12.pdf
 │
 ├── output/
 │   ├── ranked_candidates.csv
@@ -214,11 +220,9 @@ Resume_Screening_Agent/
 │   ├── main.py
 │   ├── parser.py
 │   ├── scorer.py
-│   ├── ranker.py
 │   ├── llm.py
 │   └── extractor.py
 │
-├── .env
 ├── .gitignore
 ├── requirements.txt
 ├── scoring_method.md
@@ -268,7 +272,7 @@ cd Resume_Screening_Agent
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is not available, install the dependencies manually:
+If required, dependencies can also be installed manually:
 
 ```bash
 pip install groq python-dotenv pypdf python-docx scikit-learn pandas
@@ -286,7 +290,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 Do not commit this file to GitHub.
 
-The `.gitignore` file should contain:
+The `.gitignore` file contains:
 
 ```text
 .env
@@ -316,7 +320,7 @@ Place candidate resumes inside:
 data/resumes/
 ```
 
-The agent supports:
+Supported formats:
 
 ```text
 .txt
@@ -324,21 +328,16 @@ The agent supports:
 .docx
 ```
 
-The system can process 10+ resumes in one run.
+The system can process 10+ resumes in a single run.
 
 ---
 
 ## Running the Agent
 
-Open a terminal inside the `src` directory:
+From the project root:
 
 ```bash
 cd src
-```
-
-Then run:
-
-```bash
 python main.py
 ```
 
@@ -398,55 +397,52 @@ The JSON contains the same information in structured form.
 
 ---
 
-## Example Output
-
-```text
-================================
-       RANKED CANDIDATES
-================================
-
-1. candidate_01.txt
-
-   NLP Similarity: 37.31 %
-   Skill Match: 87.5 %
-   Final Score: 52.37 %
-
-   Matched Skills:
-   python, machine learning, sql, nlp, git
-
-   Missing Skills:
-   flask, fastapi, rest api
-
-   Recommendation:
-   SHORTLIST
-
-   Reason:
-   Candidate demonstrates strong alignment with the
-   technical requirements and has several relevant
-   skills matching the job description.
-```
-
-The exact output depends on the supplied Job Description and resumes.
-
----
-
 ## Sample Demonstration
 
-The repository contains a sample Job Description and multiple sample resumes in:
+The repository contains a sample Job Description and 12 sample resumes in:
 
 ```text
 data/job_description.txt
 data/resumes/
 ```
 
-The sample dataset demonstrates batch processing and ranking of multiple candidates.
-
-The generated results can be reproduced by running:
+Running:
 
 ```bash
 cd src
 python main.py
 ```
+
+processes all 12 candidates in a single run.
+
+### Sample Ranking Result
+
+The current sample run produced:
+
+| Rank | Candidate         | Final Score | Recommendation |
+| ---: | ----------------- | ----------: | -------------- |
+|    1 | candidate_12.pdf  |      55.49% | SHORTLIST      |
+|    2 | candidate_01.txt  |      52.37% | SHORTLIST      |
+|    3 | candidate_08.txt  |      43.38% | CONSIDER       |
+|    4 | candidate_04.txt  |      40.18% | CONSIDER       |
+|    5 | candidate_03.txt  |      33.88% | CONSIDER       |
+|    6 | candidate_10.txt  |      32.46% | CONSIDER       |
+|    7 | candidate_05.txt  |      21.78% | REJECT         |
+|    8 | candidate_06.txt  |      16.55% | REJECT         |
+|    9 | candidate_02.txt  |      14.25% | REJECT         |
+|   10 | candidate_09.txt  |      11.18% | REJECT         |
+|   11 | candidate_07.txt  |       9.83% | REJECT         |
+|   12 | candidate_11.docx |       8.73% | REJECT         |
+
+**Total candidates processed: 12**
+
+```text
+SHORTLIST : 2
+CONSIDER  : 4
+REJECT    : 6
+```
+
+The exact output depends on the supplied Job Description and resumes.
 
 ---
 
@@ -499,13 +495,19 @@ The LLM adds an analysis layer that can structure:
 * Skill gaps
 * Candidate assessment
 
-The model is instructed to use only the information provided to it.
+The model is instructed to use only information provided in the resume.
+
+### Why CLI Instead of UI?
+
+A command-line interface was intentionally chosen because the challenge prioritizes a functioning end-to-end agent over visual polish.
+
+A web interface could be added later without changing the core screening pipeline.
 
 ---
 
 ## Tradeoffs
 
-### TF-IDF instead of embeddings
+### TF-IDF Instead of Embeddings
 
 TF-IDF is simpler and faster to implement, but it may miss semantic relationships.
 
@@ -513,7 +515,7 @@ For example, two phrases with similar meanings may receive a low similarity scor
 
 With more development time, sentence embeddings could improve semantic matching.
 
-### Keyword-based skill matching
+### Keyword-Based Skill Matching
 
 The current skill matching approach checks whether predefined target skills occur in the resume.
 
@@ -526,7 +528,7 @@ This is transparent and easy to audit, but it can miss:
 
 A future version could use an embedding-based skill matcher or LLM-assisted skill normalization.
 
-### LLM extraction
+### LLM Extraction
 
 Using an LLM makes education and experience extraction more flexible than fixed regular expressions.
 
@@ -534,11 +536,11 @@ However, LLM extraction introduces API dependency, latency, and the possibility 
 
 The prompt therefore explicitly instructs the model not to invent information.
 
-### CLI instead of UI
+### CLI Instead of UI
 
-A command-line interface was intentionally chosen because the challenge prioritizes a functioning end-to-end agent over visual polish.
+The CLI keeps the project small, reproducible, and easy for reviewers to run within the challenge constraints.
 
-A web interface could be added later without changing the core screening pipeline.
+A web interface could be added later.
 
 ---
 
@@ -586,7 +588,7 @@ This project demonstrates an end-to-end AI-assisted resume screening pipeline:
 ```text
 Job Description
       +
-10+ Resumes
+12 Resumes
       ↓
 Document Parsing
       ↓
