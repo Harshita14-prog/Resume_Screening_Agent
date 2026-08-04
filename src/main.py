@@ -2,7 +2,9 @@ import os
 import csv
 import json
 from parser import get_resume_text
-from scorer import calculate_final_score, generate_reasoning
+from scorer import calculate_final_score, REQUIRED_SKILLS
+from llm import generate_reasoning
+from extractor import extract_resume_information
 
 
 print("================================")
@@ -32,7 +34,7 @@ with open(jd_path, "r", encoding="utf-8") as file:
 
 results = []
 
-
+    
 # -----------------------------
 # Process every resume
 # -----------------------------
@@ -50,6 +52,13 @@ for resume_file in os.listdir(resume_folder):
         resume_text = get_resume_text(
             resume_path
         )
+        resume_information = extract_resume_information(
+            resume_text
+        )
+
+        extracted_skills = resume_information["skills"]
+        education = resume_information["education"]
+        experience = resume_information["experience"]
 
         # Calculate scores
         final_score, similarity_score, skill_score, matched_skills = calculate_final_score(
@@ -57,10 +66,26 @@ for resume_file in os.listdir(resume_folder):
             resume_text
         )
 
+        if final_score >= 50:
+            recommendation = "SHORTLIST"
+        elif final_score >= 30:
+            recommendation = "CONSIDER"
+        else:
+            recommendation = "REJECT"
+    
+        missing_skills = [
+            skill
+            for skill in REQUIRED_SKILLS
+            if skill not in matched_skills
+        ]
+
         reasoning = generate_reasoning(
-            final_score,
-            skill_score,
-            matched_skills
+            candidate_name=resume_file,
+            score=final_score,
+            matched_skills=matched_skills,
+            missing_skills=missing_skills,
+            education=education,
+            experience=experience
         )
 
         # Store result
@@ -70,7 +95,12 @@ for resume_file in os.listdir(resume_folder):
             "skill_match": skill_score,
             "final_score": final_score,
             "matched_skills": matched_skills,
-            "reasoning": reasoning
+            "missing_skills": missing_skills,
+            "extracted_skills": extracted_skills,
+            "education": education,
+            "experience": experience,
+            "reasoning": reasoning,
+            "recommendation": recommendation
         })
 
     except ValueError as error:
@@ -142,6 +172,16 @@ for rank, result in enumerate(
         )
     )
     print(
+        "   Missing Skills:",
+        ", ".join(
+            result["missing_skills"]
+        )
+    )
+    print(
+        "   Recommendation:",
+        result["recommendation"]
+    )
+    print(
         "   Reason:",
         result["reasoning"]
     )
@@ -178,7 +218,11 @@ with open(
         "Skill Match",
         "Final Score",
         "Matched Skills",
-        "Reason"
+        "Missing Skills",
+        "Education",
+        "Experience",
+        "Recommendation",
+        "AI Reasoning"
     ])
 
     for rank, result in enumerate(
@@ -193,6 +237,10 @@ with open(
             round(result["skill_match"], 2),
             round(result["final_score"], 2),
             ", ".join(result["matched_skills"]),
+            ", ".join(result["missing_skills"]),
+            "; ".join(map(str, result["education"])),
+            "; ".join(map(str, result["experience"])),
+            result["recommendation"],
             result["reasoning"]
         ])
 
@@ -227,6 +275,10 @@ for rank, result in enumerate(
             2
         ),
         "matched_skills": result["matched_skills"],
+        "missing_skills": result["missing_skills"],
+        "education": result["education"],
+        "experience": result["experience"],
+        "recommendation": result["recommendation"],
         "reason": result["reasoning"]
     })
 

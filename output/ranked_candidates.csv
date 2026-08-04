@@ -1,13 +1,214 @@
-Rank,Candidate,NLP Similarity,Skill Match,Final Score,Matched Skills,Reason
-1,candidate_12.pdf,41.78,87.5,55.49,"python, machine learning, nlp, sql, rest api, fastapi, git","Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, fastapi, git. Skill match score: 87.50%."
-2,candidate_01.txt,37.31,87.5,52.37,"python, machine learning, nlp, sql, rest api, flask, git","Strong match for the Junior AI Developer role. Matched 7 target skill(s): python, machine learning, nlp, sql, rest api, flask, git. Skill match score: 87.50%."
-3,candidate_08.txt,35.19,62.5,43.38,"python, machine learning, nlp, sql, flask","Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, flask. Skill match score: 62.50%."
-4,candidate_04.txt,30.62,62.5,40.18,"python, machine learning, nlp, sql, git","Moderate match for the Junior AI Developer role. Matched 5 target skill(s): python, machine learning, nlp, sql, git. Skill match score: 62.50%."
-5,candidate_03.txt,26.97,50.0,33.88,"python, machine learning, sql, git","Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
-6,candidate_10.txt,24.94,50.0,32.46,"python, machine learning, sql, git","Moderate match for the Junior AI Developer role. Matched 4 target skill(s): python, machine learning, sql, git. Skill match score: 50.00%."
-7,candidate_05.txt,15.04,37.5,21.78,"sql, rest api, git","Weak match for the Junior AI Developer role. Matched 3 target skill(s): sql, rest api, git. Skill match score: 37.50%."
-8,candidate_06.txt,12.93,25.0,16.55,"python, sql","Weak match for the Junior AI Developer role. Matched 2 target skill(s): python, sql. Skill match score: 25.00%."
-9,candidate_02.txt,9.64,25.0,14.25,"sql, rest api","Poor match for the Junior AI Developer role. Matched 2 target skill(s): sql, rest api. Skill match score: 25.00%."
-10,candidate_09.txt,10.62,12.5,11.18,rest api,Poor match for the Junior AI Developer role. Matched 1 target skill(s): rest api. Skill match score: 12.50%.
-11,candidate_07.txt,8.68,12.5,9.83,python,Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%.
-12,candidate_11.docx,7.11,12.5,8.73,python,Poor match for the Junior AI Developer role. Matched 1 target skill(s): python. Skill match score: 12.50%.
+Rank,Candidate,NLP Similarity,Skill Match,Final Score,Matched Skills,Missing Skills,Education,Experience,Recommendation,AI Reasoning
+1,candidate_12.pdf,41.78,87.5,55.49,"python, machine learning, nlp, sql, rest api, fastapi, git",flask,B.Tech Computer Science,Developed NLP applications using Python; Created REST APIs using FastAPI; Worked on machine learning model deployment,SHORTLIST,"**Candidate Assessment:**
+
+Based on the provided information, candidate_12.pdf has demonstrated a strong foundation in Python, machine learning, NLP, and REST API development using FastAPI. Their experience in developing NLP applications and machine learning model deployment suggests a good understanding of these concepts.
+
+**Key Strengths:**
+
+1. Proficiency in Python and its applications in NLP and machine learning.
+2. Experience with FastAPI for REST API development.
+3. Familiarity with Git for version control.
+
+**Important Skill Gaps:**
+
+1. Lack of experience with Flask, a popular Python web framework.
+
+**Final Recommendation:**
+
+Given the candidate's strengths and experience, along with the overall score of 55.49%, I recommend **SHORTLIST** for further evaluation. However, it is essential to assess their skills in Flask and other areas to ensure they meet the requirements of the position."
+2,candidate_01.txt,37.31,87.5,52.37,"python, machine learning, nlp, sql, rest api, flask, git",fastapi,B.Tech Computer Science,Built an AI-based resume screening project using Python and NLP.; Developed REST APIs using Flask.,SHORTLIST,"**Candidate Assessment:**
+
+Based on the provided information, candidate_01 demonstrates a solid foundation in Python, machine learning, NLP, and REST API development using Flask. Their experience in building an AI-based resume screening project showcases their practical application of these skills.
+
+**Key Strengths:**
+
+1. Proficiency in Python and NLP for AI-based projects.
+2. Experience in developing REST APIs using Flask.
+3. Strong foundation in computer science, as evident from their B.Tech degree.
+
+**Important Skill Gaps:**
+
+1. Lack of experience with FastAPI, a popular alternative to Flask for building REST APIs.
+
+**Final Recommendation:**
+
+Given the candidate's strengths and the overall score of 52.37%, we recommend **SHORTLIST** for further evaluation."
+3,candidate_08.txt,35.19,62.5,43.38,"python, machine learning, nlp, sql, flask","rest api, fastapi, git",B.Tech Computer Science,Built machine learning models for classification and prediction.; Developed Flask APIs for deploying ML models.,CONSIDER,"**Candidate Assessment:**
+
+The candidate has a moderate level of experience in machine learning and Flask API development. They have demonstrated the ability to build machine learning models and deploy them using Flask APIs. However, their overall score is relatively low, indicating some gaps in their skills and experience.
+
+**Key Strengths:**
+
+- Proficiency in machine learning, particularly in building classification and prediction models.
+- Experience with Flask API development for deploying machine learning models.
+- Familiarity with Python and SQL.
+
+**Important Skill Gaps:**
+
+- Lack of experience with REST API development.
+- No mention of using FastAPI, which is a popular alternative to Flask.
+- No experience with Git, which is a fundamental tool for version control.
+
+**Final Recommendation:**
+
+CONSIDER. The candidate has some relevant experience and skills, but significant gaps in their skillset, particularly in REST API development, FastAPI, and Git. Further evaluation and training may be necessary to determine their full potential."
+4,candidate_04.txt,30.62,62.5,40.18,"python, machine learning, nlp, sql, git","rest api, flask, fastapi",B.Tech Computer Science,"{'job': 'Developed NLP-based text classification models.', 'description': 'Worked on data preprocessing and machine learning pipelines.'}",CONSIDER,"**Candidate Assessment:**
+
+The candidate has a moderate level of experience and education in computer science. They have demonstrated skills in developing NLP-based text classification models, working on data preprocessing, and machine learning pipelines.
+
+**Key Strengths:**
+
+1. Proficiency in Python, machine learning, NLP, SQL, and Git.
+2. Experience in developing NLP-based text classification models.
+
+**Important Skill Gaps:**
+
+1. Lack of experience with REST API, which is a common requirement in many projects.
+2. Limited exposure to Flask and FastAPI, which are popular frameworks for building web applications.
+
+**Final Recommendation:**
+
+CONSIDER. The candidate has a solid foundation in computer science and has demonstrated skills in NLP and machine learning. However, they require additional training or experience in REST API, Flask, and FastAPI to become a more well-rounded candidate."
+5,candidate_03.txt,26.97,50.0,33.88,"python, machine learning, sql, git","nlp, rest api, flask, fastapi",B.Tech Computer Science,"{'job': 'Worked on machine learning projects', 'organization': 'Not specified', 'duration': 'Not specified', 'description': 'Involving data preprocessing and predictive modeling.'}",CONSIDER,"**Candidate Assessment**
+
+The candidate has a moderate level of relevant skills and experience, but significant gaps in key areas. Their overall score is 33.88%, indicating a need for further development.
+
+**Key Strengths**
+
+- The candidate has experience working on machine learning projects, which demonstrates their ability to apply theoretical knowledge to practical problems.
+- They possess skills in Python, machine learning, SQL, and Git, which are essential for data-driven roles.
+
+**Important Skill Gaps**
+
+- The candidate lacks experience and skills in NLP, REST API, Flask, and FastAPI, which are critical for modern data science and software development.
+- Their job description and organization are not specified, making it difficult to assess their work environment and responsibilities.
+
+**Final Recommendation**
+
+CONSIDER. The candidate has some relevant skills and experience, but significant skill gaps need to be addressed before considering them for a role."
+6,candidate_10.txt,24.94,50.0,32.46,"python, machine learning, sql, git","nlp, rest api, flask, fastapi",B.Tech Computer Science,Worked on machine learning and data preprocessing tasks.; Built predictive models using Python and scikit-learn.,CONSIDER,"**Candidate Assessment:**
+
+The candidate has a basic understanding of machine learning concepts and has applied them using Python and scikit-learn. They have also worked on data preprocessing tasks. However, their overall score is relatively low, indicating a need for improvement in various areas.
+
+**Key Strengths:**
+
+- Proficient in Python and machine learning concepts
+- Experience with data preprocessing tasks
+- Familiarity with SQL
+
+**Important Skill Gaps:**
+
+- Lack of Natural Language Processing (NLP) skills
+- No experience with REST API or web development frameworks (Flask or FastAPI)
+- Limited education background (B.Tech Computer Science only)
+
+**Final Recommendation:**
+
+CONSIDER. The candidate has some relevant skills, but significant gaps in NLP, web development, and education background need to be addressed. Further development and education may be necessary to fill these gaps."
+7,candidate_05.txt,15.04,37.5,21.78,"sql, rest api, git","python, machine learning, nlp, flask, fastapi",B.Tech Information Technology,"{'job': 'Developed backend applications', 'technologies': 'Java, Spring Boot', 'databases': 'MySQL'}; {'job': 'Designed REST APIs', 'technologies': 'REST APIs'}",REJECT,"**Candidate Assessment**
+
+The candidate has a limited set of matched skills, primarily focused on backend development with SQL, REST API, and Git. Their experience is mostly related to Java and Spring Boot, with some involvement in designing REST APIs.
+
+**Key Strengths**
+
+- Proficiency in SQL and REST API design
+- Experience with Git for version control
+- Familiarity with Java and Spring Boot for backend development
+
+**Important Skill Gaps**
+
+- Lack of proficiency in Python, a widely used programming language
+- No experience in machine learning, natural language processing (NLP), or related technologies
+- Limited exposure to Flask and FastAPI, popular frameworks for building web applications
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. This decision is likely due to the significant skill gaps in the candidate's profile, particularly in areas like Python, machine learning, and modern web development frameworks."
+8,candidate_06.txt,12.93,25.0,16.55,"python, sql","machine learning, nlp, rest api, flask, fastapi, git",B.Tech Computer Science,Performed data analysis and visualization on large datasets.; Built predictive models using Python and scikit-learn.,REJECT,"**Candidate Assessment**
+
+The candidate has a limited set of matched skills, primarily focused on Python and SQL. Their experience includes data analysis and visualization, as well as building predictive models using Python and scikit-learn. However, their overall score is relatively low at 16.55%, indicating a lack of comprehensive skills and experience.
+
+**Key Strengths**
+
+- Proficient in Python, with experience in building predictive models using scikit-learn.
+- Familiarity with SQL for data analysis and visualization.
+
+**Important Skill Gaps**
+
+- Significant gaps in machine learning, NLP, REST API, Flask, FastAPI, and Git skills, which are essential for a comprehensive data science or software development role.
+- Limited education background, with only a B.Tech in Computer Science.
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. This decision is consistent with the candidate's limited skill set and lack of comprehensive experience."
+9,candidate_02.txt,9.64,25.0,14.25,"sql, rest api","python, machine learning, nlp, flask, fastapi, git",B.Tech Information Technology,"{'job': 'Web Applications Developer', 'organization': 'Not specified', 'duration': 'Not specified', 'description': 'Developed web applications using Java and Spring Boot. Worked with relational databases and REST APIs.'}",REJECT,"**Candidate Assessment**
+
+The candidate, with an overall score of 14.25%, has demonstrated some relevant skills and experience in web application development. However, significant skill gaps and lack of detail in their profile hinder their potential.
+
+**Key Strengths**
+
+- Proficiency in SQL and REST API, indicating a basic understanding of database management and web application architecture.
+- Experience in developing web applications using Java and Spring Boot, showcasing their ability to work with a specific technology stack.
+
+**Important Skill Gaps**
+
+- Lack of proficiency in Python, a widely used programming language in the industry.
+- No experience or knowledge in machine learning, NLP, or Git, essential tools for modern software development.
+- Limited exposure to popular web frameworks such as Flask and FastAPI.
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. While the candidate has some relevant skills and experience, the significant skill gaps and lack of detail in their profile make them a less competitive candidate for the position."
+10,candidate_09.txt,10.62,12.5,11.18,rest api,"python, machine learning, nlp, sql, flask, fastapi, git",B.Tech Computer Science,Developed responsive web applications using React and Node.js.; Worked with MongoDB and REST APIs.,REJECT,"**Candidate Assessment**
+
+The candidate, with an overall score of 11.18%, has demonstrated some relevant experience in web application development. However, their skills and qualifications fall short in several key areas.
+
+**Key Strengths**
+
+- The candidate has experience developing responsive web applications using React and Node.js.
+- They have worked with MongoDB and REST APIs.
+
+**Important Skill Gaps**
+
+- The candidate lacks proficiency in essential programming languages, including Python.
+- They are missing expertise in machine learning, NLP, and SQL.
+- They have not demonstrated knowledge of popular frameworks such as Flask and FastAPI.
+- They also lack experience with version control using Git.
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. The candidate's significant skill gaps and lack of proficiency in essential areas make them unsuitable for the position at this time."
+11,candidate_07.txt,8.68,12.5,9.83,python,"machine learning, nlp, sql, rest api, flask, fastapi, git",B.Tech Electronics and Communication,"{'job': 'Worked on embedded systems and hardware automation projects.', 'organization': 'Not specified'}",REJECT,"**Candidate Assessment**
+
+The candidate, with an overall score of 9.83%, has a limited profile that raises concerns about their suitability for the role. Their education and experience are not explicitly aligned with the required skills, and significant skill gaps exist.
+
+**Key Strengths**
+
+- The candidate has a degree in B.Tech Electronics and Communication, which may provide a foundation for understanding electronics and communication systems.
+- They have experience working on embedded systems and hardware automation projects, which could be relevant to certain roles.
+
+**Important Skill Gaps**
+
+- The candidate lacks essential skills in machine learning, NLP, SQL, REST API, Flask, FastAPI, and Git, which are critical for many roles.
+- Their experience and education do not explicitly demonstrate proficiency in these areas.
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. This decision is supported by the significant skill gaps and lack of alignment between the candidate's education and experience and the required skills."
+12,candidate_11.docx,7.11,12.5,8.73,python,"machine learning, nlp, sql, rest api, flask, fastapi, git",B.Tech Mechanical Engineering,"{'job': 'Designed mechanical components and performed engineering simulations.', 'tools': 'MATLAB'}; {'job': 'Used MATLAB for numerical analysis.', 'tools': 'MATLAB'}",REJECT,"**Candidate Assessment**
+
+The candidate, with an overall score of 8.73%, has a limited skill set and lacks relevant experience in key areas. Their background is in mechanical engineering, with experience using MATLAB for numerical analysis and designing mechanical components.
+
+**Key Strengths**
+
+- Proficient in MATLAB, a programming language used for numerical analysis and engineering simulations.
+- Has experience in designing mechanical components and performing engineering simulations.
+
+**Important Skill Gaps**
+
+- Lacks skills in machine learning, NLP, SQL, REST API, Flask, FastAPI, and Git, which are essential for many modern software development and data analysis roles.
+- No experience or skills in areas related to software development, data analysis, or data science.
+
+**Final Recommendation**
+
+Based on the provided information, the deterministic screening system has assigned a REJECT recommendation. This is due to the significant skill gaps and lack of relevant experience in key areas."
